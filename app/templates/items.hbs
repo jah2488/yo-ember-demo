@@ -1,0 +1,9 @@
+<h1>Items</h1>
+
+<ul>
+ {{#each}}
+   <li> {{#link-to 'item' this}}{{this.id}}{{/link-to}} | {{name}} | {{lastLocation}} </li>
+  {{/each}}
+</ul>
+
+{{outlet}}
